@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:elevation="10dp"
+        android:id="@+id/header1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back_btn"
+            android:background="@color/transparent"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:src="@drawable/back_btn"/>
+
+        <TextView
+            android:id="@+id/title_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Bookipedia Store"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/notify1"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="15dp"
+            android:background="@color/transparent"
+            android:src="@drawable/bell"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer1"
+        android:layout_below="@+id/header1"
+        android:background="@color/black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/rl1">
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@+id/line"
+                android:background="@color/lblack" />
+
+
+
+            <ImageView
+                android:id="@+id/b1"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/i1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title_bk"
+                android:text="THE SILENT PATIENT:THE RECORD-BREAKING,MULTIMILLION COPY SUNDAY TIMES BESTSELLING THRILLER AND TIKTOK SENSATION"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:layout_toRightOf="@+id/b1"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alex Michaelides"
+                android:textColor="@color/lbue"
+                android:id="@+id/auth_n"
+                android:layout_below="@id/title_bk"
+                android:layout_toRightOf="@+id/b1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:textSize="17dp"/>
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="4.5"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:id="@+id/rating"
+                android:layout_below="@id/auth_n"
+                android:layout_toRightOf="@+id/b1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:textSize="17dp"/>
+
+
+            <ImageView
+                android:id="@+id/star_fill"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star_fill"
+                android:layout_below="@+id/auth_n"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="170dp"/>
+
+            <ImageView
+                android:id="@+id/star_fill1"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star_fill"
+                android:layout_below="@+id/auth_n"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@+id/star_fill"/>
+
+
+            <ImageView
+                android:id="@+id/star_fill2"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star_fill"
+                android:layout_below="@+id/auth_n"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@+id/star_fill1"/>
+
+
+            <ImageView
+                android:id="@+id/star_fill3"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star_fill"
+                android:layout_below="@+id/auth_n"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@+id/star_fill2"/>
+
+            <ImageView
+                android:id="@+id/star_fill4"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star_hf"
+                android:layout_below="@+id/auth_n"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@+id/star_fill3"/>
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="303,838"
+                android:textColor="@color/lbue"
+                android:id="@+id/bk_s"
+                android:layout_below="@id/auth_n"
+                android:layout_toRightOf="@+id/star_fill4"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="17dp"/>
+
+            <ImageView
+                android:id="@+id/best_seller"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/best_seller"
+                android:layout_toRightOf="@+id/b1"
+                android:layout_below="@+id/rating"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rs.197.60"
+                android:textColor="@color/white"
+                android:id="@+id/book_rs"
+                android:layout_below="@id/best_seller"
+                android:layout_toRightOf="@+id/b1"
+                android:layout_marginTop="20dp"
+                android:textSize="17dp"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buy on Amazon.in"
+                android:textColor="@color/white"
+                android:id="@+id/buy_az"
+                android:layout_below="@id/book_rs"
+                android:layout_toRightOf="@+id/b1"
+                android:layout_marginTop="5dp"
+                android:textSize="17dp"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This app does not support purchasing books.To buy,visit Amazon.in/ebooks."
+                android:textColor="@color/white"
+                android:id="@+id/buy"
+                android:layout_below="@id/book_rs"
+                android:textSize="17dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="35dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/add_to_list"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="ADD TO LIST"
+                android:textColor="@color/black"
+                android:layout_below="@+id/buy"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="20dp"
+                android:padding="6dp"
+                android:elevation="10dp"
+                android:textAlignment="center" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/dwn"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button1"
+                android:text="DOWNLOAD SAMPLE"
+                android:textColor="@color/black"
+                android:layout_below="@+id/add_to_list"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="20dp"
+                android:padding="6dp"
+                android:elevation="10dp"
+                android:textAlignment="center" />
+
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@+id/dwn"
+                android:layout_marginTop="15dp"
+                android:background="@color/lblack" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BOOK OVERVIEW"
+                android:textColor="@color/white"
+                android:id="@+id/bk_overview"
+                android:layout_below="@id/line1"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DESCRIPTION"
+                android:textColor="@color/lbue"
+                android:id="@+id/desc"
+                android:layout_below="@id/bk_overview"
+                android:textSize="18dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/bk_desc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desc"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="- THE RECORD-BREAKING, MULTIMILLION COPY GLOBAL BESTSELLER AND TIKTOK SENSATION - Discover the #1 New York Times and Sunday Times bestselling thriller with a jaw-dropping twist that everyone is talking about - as seen on TikTok. Soon to be a major film."
+
+
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ALICIA BERENSON LIVED A SEEMINGLY
+                PERFECT LIFE UNTIL ONE DAY SIX YEARS AGO.WHEN SHE SHOT HER HUSBAND IN THE HEAD FIVE TIMES."
+                android:textColor="@color/white"
+                android:id="@+id/desc2"
+                android:layout_below="@id/bk_desc1"
+                android:textSize="18dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SINCE THEN SHE HASN'T SPOKEN A SINGLE WORD. IT'S TIME TO FIND OUT WHY."
+                android:textColor="@color/white"
+                android:id="@+id/desc3"
+                android:layout_below="@id/desc2"
+                android:textSize="18dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="italic"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ABOUT THE BOOKIPEDIA EDITION"
+                android:textColor="@color/white"
+                android:id="@+id/about"
+                android:layout_below="@id/desc3"
+                android:textSize="18dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/add_bk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_tr"
+                android:text="Length : 336 pages
+                        Word Wise : Enabled
+                        Screen Reader : Supported
+                        Enhanced Typesetting : Enabled
+                        Page Flip : Enabled"
+                android:layout_below="@+id/about"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:padding="6dp"
+                android:elevation="10dp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/white"/>
+
+
+            <TextView
+                android:id="@+id/abt_auth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_below="@+id/add_bk"
+                android:text="ABOUT THE AUTHOR"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="1250dp"
+                android:layout_marginEnd="0dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/author1"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="65dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/auth_bg"
+                        android:src="@drawable/author1" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/author_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/author1"
+                    android:padding="10dp"
+                    android:text="Alex Michaelides"
+                    android:textColor="@color/lbue"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/auth_desp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/author_name"
+                    android:layout_toRightOf="@+id/author1"
+                    android:padding="10dp"
+                    android:text="Alex Michaelides was born and raised in Cyprus. He has an M.A. in English Literature from Trinity College, Cambridge University, and an M.A. in Screenwriting from the American Film Institute in Los Angeles. The Silent Patient was his first novel, debuting at #1 on the New York Times bestseller list, and has sold more than 6.5 million copies worldwide. The rights have been sold in a record-breaking 51 countries, and the book has been optioned for film by Plan B. His second novel, The Maidens, was an instant New York Times bestseller and has been optioned for television by Miramax Television and Stone Village."
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:textStyle="normal" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/follow_button"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/auth_desp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="155dp"
+                    android:background="@drawable/button1"
+                    android:elevation="5dp"
+                    android:padding="3dp"
+                    android:text=" +  Follow  "
+                    android:textAlignment="center" />
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/follow_button"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/lblack" />
+
+                <TextView
+                    android:id="@+id/review"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line2"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:text="TOP REVIEWS FROM INDIA"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="650dp">
+
+
+                    <ImageView
+                        android:id="@+id/customer"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/customer" />
+
+                    <TextView
+                        android:id="@+id/cust_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/customer"
+                        android:padding="10dp"
+                        android:text="Arjun"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/cus_desp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cust_name"
+                        android:layout_toRightOf="@id/customer"
+                        android:padding="10dp"
+                        android:text="I am not much of a book reader, so I thought of giving this book a shot and I can say this one has a thrilling story which kept me hooked till last. I took around 5 days to finish, and the twist at last was so unexpected. The writing is easy to understand."
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/helpful"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cus_desp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/button_tr"
+                        android:elevation="10dp"
+                        android:padding="6dp"
+                        android:text="HELPFUL"
+                        android:textAlignment="center"
+                        android:textColor="@color/white" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/report"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="250dp"
+                        android:layout_toRightOf="@+id/helpful"
+                        android:background="@drawable/button1"
+                        android:elevation="10dp"
+                        android:padding="6dp"
+                        android:text="Report"
+                        android:textAlignment="center" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/footer1"
+        android:orientation="horizontal"
+        android:background="@color/black"
+        android:weightSum="4"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/arrow_circle_up"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/book"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/shopping_cart"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/option_3"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
